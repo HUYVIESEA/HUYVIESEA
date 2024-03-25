@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+.container
+{
+    max-width: 1280px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 2rem;
+}
+.items-center
+{
+    text-align: center;
+}
+.padding-1
+{
+    padding: 2.5rem 0;
+}
+.padding-2
+{
+    padding: 3rem 0;
+}
+.padding-3
+{
+    padding: 4rem 0;
+}
+h2, h3, h4
+{
+    text-transform: uppercase;
+}
+.links
+{
+    color: #FFF;
+    text-decoration: none;
+}
+/* CSS HOME*/
+.main-home
+{
+    background: url(container/anh-nen-khong-gian-4k_062608068.jpg) no-repeat center center / cover;
+    height: 100vh;
+}
+/*nav*/
+.main-home .home-nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0 0 0;
+}
+.main-home .home-nav a.link-home
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px transparent solid;
+    border-top: 3px white solid;
+    border-bottom: 3px white solid;
+    transition: all 0.5s;
+
+}
+.main-home .home-nav a.link-home:hover
+{
+    border: 3px transparent solid;
+    border-left: 3px #fff solid;
+    border-right: 3px #fff solid;
+}
+.main-home .link-home
+{
+    font-size:x-large;
+}
+.main-home .home-nav ul
+{
+    display: flex;
+    list-style: none;
+}
+.main-home .home-nav .link-home, ul li
+{
+    padding: 1rem 1.5rem;
+}
+.main-home .home-nav ul li a
+{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    transition: all 0.5s;
+}
+.main-home .home-nav ul li a.active
+{
+    border-color: #ffbc00;
+}
+.main-home .home-nav ul li a:hover
+{
+    border-color: #fff
+}
+.main-home .home-content
+{
+    text-align: center;
+    padding-top: 10%;
+
+}
+.main-home .home-content h1
+{
+    color: #fff;
+}
+.main-home .home-content p
+{
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.main-home .home-content .view-work
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: 1px transparent solid;
+}
+.main-home .home-content .view-work:hover
+{
+    background-color: #333;
+    color: #fff;
+    transition: all 0.5s;
+    border: 1px #fff solid;
+    scale: 1.2;
+}
+.main-home .home-content .social-home
+{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.main-home .home-content .social-home a
+{
+    text-decoration: none;
+    color:black
+}
+.main-home .home-content .social-home a .fa-brands
+{
+    font-size: x-large;
+    padding: 0.5rem;
+    border-bottom: 3px transparent solid;
+    transition: all 0.5s;
+}
+.main-home .home-content .social-home a .fa-brands:hover
+{
+    color: #fff;
+    border-bottom: 3px #fff solid;
+    transition: all 0.5s;
+    scale: 2;
+}
+/*CSS about*/
+.main-about
+{
+    height: auto;
+    background-color: #fff;
+}
+.main-title
+{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    display: block;
+}
+.line
+{
+    height: 3px;
+    width: 3rem;
+    background-color: #ffbc00;
+    margin: 1rem auto 1rem auto;
+}
+.sub-title
+{
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+}
+.main-about .about-a-info
+{
+    display: grid;
+    grid-template-areas:
+    "bioimg bioinfo bioinfo"
+    "aw1 aw2 aw3";
+    grid-gap: 1.2rem;
+}
+.main-about .about-a-info img
+{
+    width: 100%;
+}
+.main-about .about-a-info .bio-img
+{
+    grid-area: bioimg;
+    border: 3px #333 solid ;
+}
+.main-about .about-a-info .bio-info p
+{
+    grid-area: bioinfo;
+    border-left: 3px solid #ffbc00;
+    padding: 1.2rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.dark-light
+{
+    background-color: #ccc;
+    color: #000;
+}
+.dark-dark
+{
+    background-color: #333;
+    color: #fff;
+}
+.main-dark
+{
+    background: #ffbc00;
+    color: #fff;
+}
+.main-about .about-b .progress
+{
+    overflow: hidden;
+    height: 20px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+}
+.main-about .about-b .progress div
+{
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    background: #ffbc00;
+}
+/*work css*/
+.main-work
+{
+    height: auto;
+    background-color: #fff;
+}
+.main-work .work-a .items
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px #333 solid;
+}
+.main-work .work-a .items .item
+{
+    position: relative;
+    background: #ccc;
+    overflow: hidden;
+    padding: 2rem;
+}
+.main-work .work-a .items .item .item-img
+{
+    display: block;
+    height: auto;
+    transition: all 0.5s;
+}
+.main-work .work-a .items .item .item-img:hover
+{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.main-work .work-b .stats
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main-work .work-b .stats div
+{
+    background-color: #333;
+    padding: 3rem;
+}
+.main-work .work-b .stats div .stats-title
+{
+    color: #FFF;
+    text-transform: none;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 3px  solid;
+
+}
+.main-work .work-b .stats div .stast-number
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.main-work .work-b .stats div .stats-img
+{
+    margin: 1rem auto 1rem auto;
+}
+.main-work .work-c .process
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+.main-work .work-c .process img:hover
+{
+    transform: rotate(90deg);
+    transition: all 01s;
+    filter: drop-shadow(-10px 0px 0px #333);
+}
+.main-work .work-c .process img
+{
+    transition: all 0.5s;
+}
+
+.main-contact
+{
+    height: auto;
+    background-color: #fff;
+}
+.main-contact .contact-b .contact-info
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+}
+.main-contact .contact-c h1
+{
+    text-align: center;
+    font-size: 5rem;
+}
+.main-footer
+{
+    background: #333;
+    color: #fff;
+    height: 5rem;
+}
+.main-footer .footer-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+.main-footer .footer-content .social .fa
+{
+    color: #FFF;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.5s;
+    margin: 5px;
+}
+.main-footer .footer-content .social .fa:hover
+{
+    background-color: #000;
+    border-bottom: 2px solid #000;
+}
+/**/
