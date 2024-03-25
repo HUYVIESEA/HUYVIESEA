@@ -5,6 +5,16 @@
     font-family:'poppins',sans-serif;
     scroll-behavior: smooth;
 }
+body
+{
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
+    scrollbar-width: none; /* cho Firefox */
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
 .container
 {
     max-width: 1280px;
